@@ -1,5 +1,6 @@
 import {Client, Interaction} from 'discord.js'
-export default  {
+import { command } from '../types';
+const dude: command ={
     name: "testy",
     description: "nigga boy",
     execute: async (client: Client, interaction: Interaction) => {
@@ -7,3 +8,4 @@ export default  {
         interaction.reply('hehe')
     }
 }
+export default dude
